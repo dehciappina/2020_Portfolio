@@ -1,0 +1,271 @@
+
+html {
+    font-size: 14px;
+}
+
+body, html, h1, h2, h3, h4, h5, p {
+    margin:0;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAEAEA;
+    height: 400vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#measurers img {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    width: 1rem;
+    height: 200vh;
+    object-fit: cover;
+    filter: brightness(1);
+}
+
+#measurers img:first-child {
+    left: 0;
+    animation: measurers_right_anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+#measurers img:last-child {
+    right:0;
+    animation-direction: reverse;
+    animation: measurers_left_anim 10s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+@keyframes measurers_right_anim {
+    0% {
+        transform: translateY(-35%);
+    }
+    25% {
+        transform: translateY(-20%);
+    }
+    50% {
+        transform: translateY(-0%);
+    }
+    75% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(-35%);
+    }
+}
+
+@keyframes measurers_left_anim {
+    0% {
+        transform: translateY(0%);
+    }
+    25% {
+        transform: translateY(-25%);
+    }
+    50% {
+        transform: translateY(-40%);
+    }
+    75% {
+        transform: translateY(-15%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+header {
+    width: 100%;
+    background: white;
+    position: relative;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+#blue_bordertop {
+    width: 100%;
+    height: 6rem;
+    background: #4e4cff;
+    position: absolute;
+}
+
+#photo_container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 33vw;
+    height: 40vw;
+    background: #4e4cff;
+    margin: 0 auto;
+    border-radius: 0 0 30rem 30rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#photo_container img {
+    width: 90%;
+    object-fit: contain;
+    margin-bottom: 5%;
+}
+
+#photo_container > div {
+    background: white;
+    width: 50vw;
+    height: 5.5rem;
+    position: absolute;
+    top: 0.6rem;
+}
+
+#left_radius {
+    left: 0;
+    transform: translateX(-100%);
+    border-radius: 0 3rem 0 0;
+}
+
+#right_radius {
+    right:0;
+    transform: translateX(100%);
+    border-radius: 3rem 0 0 0;
+}
+
+#contact_bts {
+    position: absolute;
+    top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3vw;
+    box-sizing: border-box;
+}
+
+#contact_bts > * {
+    display: flex;
+    width: 28vw;
+    height: 9vw;
+}
+
+#contact_bts svg {
+ width:100%;
+ height:100%;
+}
+
+h1 {
+    color: #4d4d4d;
+    position: relative;
+    padding-top: 42vw;
+    font-weight: 300;
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+}
+
+h1 div {
+    font-size: 2rem;
+}
+
+h1 strong {
+    font-weight: 400;
+    display: block;
+}
+
+h1 span {
+    font-size: 1.3rem;
+    font-weight: 400;
+    display: block;
+    line-height: 3rem;
+}
+
+header b {
+    font-weight: 400;
+    color: #999999;
+}
+
+h2 {
+    font-weight: 400;
+    color: #4d4d4d;
+    padding: 0 4rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+header a {
+    color:#4e4cff;
+}
+
+#see_my_work {
+    font-size: 1.6rem;
+    line-height: 5rem;
+}
+
+.body_h2 {
+    font-size: 2rem;
+    color:#666666;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+#whatIWork {
+    width: 75%;
+    margin: 0 auto;
+    margin: 0 auto 7rem auto;
+}
+
+#whatIWork svg {
+    width: 25%;
+    margin-right: 1.6rem;
+}
+
+#whatIWork div  {
+    margin-bottom: 2rem;
+}
+
+#whatIWork div div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+
+#whatIWork h3 {
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: #666666;
+    width: 75%;
+}
+
+#whatIWork h4 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #999999;
+    width: 70%;
+}
+
+.pre_pos_timeline {
+    width: 100%;
+    display: block;
+}
+
+#timeline {
+    background-color: #4e4cff;
+    position: relative;
+    margin: -0.2rem 0;
+    padding: 2rem 0;
+}
+
+#timeline h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 300;
+    color: white;
+}
+
+#timeline_line01 {
+    position: relative;
+    left: 4rem;
+    top: 4rem;
+}
