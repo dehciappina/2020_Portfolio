@@ -20,7 +20,7 @@ body {
     right:0;
     left:0;
     bottom:0;
-    z-index: 3;
+    z-index: 5;
 }
 
 a {
@@ -110,8 +110,8 @@ header {
     content: '';
     position: absolute;
     top: 0.58rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 10vw;
+    height: 10vw;
     background-image: url(assets/header_corner_left.svg);
 }
 
@@ -154,7 +154,6 @@ header {
 
 #fixed_contacts {
     position: fixed;
-    top:0;
     bottom: 0;
     z-index: 5;
 }
@@ -165,7 +164,8 @@ header {
     width: 3.5rem;
     height: 3.5rem;
     left: 7vw;
-    top: calc(100vh - 6.5rem);
+    bottom: 3rem;
+    /* top: calc(100vh - 6.5rem); */
     z-index: 3;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -178,13 +178,14 @@ header {
 #contact_bts > * {
     position: absolute;
     z-index: 3;
-    top: 2rem;
+    /* top: 2rem; */
+    bottom: calc(100vh + -4rem);
     height: 8vw;
     max-height: 3rem;
     width: 8vw;
     max-width: 3rem;
     transform: translate(0, 0);
-    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.5s cubic-bezier(0.6, 0, 0.2, 1);
 }
 
 .iconBg, .iconBody {
@@ -281,7 +282,7 @@ header a {
 #whatIWork {
     width: 80%;
     max-width: 22rem;
-    margin: 0 auto 20rem auto;
+    margin: 0 auto 22rem auto;
     text-align: center;
 }
 
