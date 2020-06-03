@@ -154,6 +154,8 @@ header {
 
 #fixed_contacts {
     position: fixed;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
     bottom: 0;
     z-index: 5;
 }
