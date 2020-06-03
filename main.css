@@ -156,7 +156,7 @@ header {
     position: fixed;
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
-    bottom: 0;
+    height: 100vh;
     z-index: 5;
 }
 
