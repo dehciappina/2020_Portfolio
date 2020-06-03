@@ -61,28 +61,6 @@ function checkScroll() {
                 }
             }
 
-            
-
-            contactContainer.addEventListener('click', function() {
-                if(contactsOpen == false) {
-                    contactContainer.style.transform = 'scale(1) rotate(225deg)'
-                    contactsOpen = true;
-
-                    contactBt1.style.transform = 'translate(2vw, calc(100vh - 12rem))'
-                    contactBt2.style.transform = 'translate(-10vw, calc(100vh - 15rem))'
-                    contactBt3.style.transform = 'translate(-63vw, calc(100vh - 18rem))'
-                    contactBt4.style.transform = 'translate(-75vw, calc(100vh - 21rem))'
-                } else {
-                    contactContainer.style.transform = 'scale(1)'
-                    contactsOpen = false;
-
-                    contactBt1.style.transform = 'translate(2vw, calc(100vh - 8rem))'
-                    contactBt2.style.transform = 'translate(-10vw, calc(100vh - 8rem))'
-                    contactBt3.style.transform = 'translate(-64vw, calc(100vh - 8rem))'
-                    contactBt4.style.transform = 'translate(-75vw, calc(100vh - 8rem))'
-                }
-            })
-
             if(windowPosition > windowWidthProfilePhoto) {
     
                 contactsOpen = false;
@@ -134,6 +112,28 @@ function checkScroll() {
             }
     }
 }
+
+            
+
+contactContainer.addEventListener('click', function() {
+    if(contactsOpen == false) {
+        contactContainer.style.transform = 'scale(1) rotate(225deg)'
+        contactsOpen = true;
+
+        contactBt1.style.transform = 'translate(2vw, calc(100vh - 12rem))'
+        contactBt2.style.transform = 'translate(-10vw, calc(100vh - 15rem))'
+        contactBt3.style.transform = 'translate(-63vw, calc(100vh - 18rem))'
+        contactBt4.style.transform = 'translate(-75vw, calc(100vh - 21rem))'
+    } else {
+        contactContainer.style.transform = 'scale(1)'
+        contactsOpen = false;
+
+        contactBt1.style.transform = 'translate(2vw, calc(100vh - 8rem))'
+        contactBt2.style.transform = 'translate(-10vw, calc(100vh - 8rem))'
+        contactBt3.style.transform = 'translate(-64vw, calc(100vh - 8rem))'
+        contactBt4.style.transform = 'translate(-75vw, calc(100vh - 8rem))'
+    }
+})
 
 checkScroll()
 document.onreadystatechange = function () {
