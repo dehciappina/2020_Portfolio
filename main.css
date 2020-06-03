@@ -1,16 +1,16 @@
 
 html {
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
-body, html, h1, h2, h3, h4, h5, p {
+body, html, h1, h2, h3, h4, h5, h6, p {
     margin:0;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #F5F5F5;
-    height: 400vh;
 }
 
 #loadImg {
@@ -29,10 +29,9 @@ a {
 
 #measurers img {
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     top: 0;
     height: 100%;
-    overflow: hidden;
     width: 1rem;
     height: 200vh;
     object-fit: cover;
@@ -74,8 +73,7 @@ header {
     background: white;
     position: relative;
     text-align: center;
-    margin-bottom: 3rem;
-    overflow-x: hidden;
+    padding-bottom: 2rem;
 }
 
 #h1_pusher {
@@ -85,7 +83,7 @@ header {
 
 #blue_bordertop {
     width: 100%;
-    height: 6rem;
+    height: 0.6rem;
     max-height: 25vw;
     background: #4e4cff;
     position: absolute;
@@ -95,7 +93,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    width: 33vw;
+    width: calc(100vw/3);
     max-width: 13rem;
     height: 40vw;
     max-height: 16rem;
@@ -108,15 +106,35 @@ header {
     right: 0;
 }
 
+#photo_container::before, #photo_container::after {
+    content: '';
+    position: absolute;
+    top: 0.58rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-image: url(assets/header_corner_left.svg);
+}
+
+#photo_container::before {
+    left: 0;
+    transform: translateX(-98%);
+}
+
+#photo_container::after {
+    transform: translateX(98%) rotate(-90deg);
+    right: 0;
+}
+
+
 #photo_container img {
-    width: 90%;
+    width: 89%;
     object-fit: contain;
-    margin-bottom: 5%;
+    margin-bottom: 6%;
 }
 
 #photo_container > div {
     background: white;
-    width: 50vw;
+    width: calc(100vw/3);
     height: 5.5rem;
     position: absolute;
     top: 0.6rem;
@@ -134,13 +152,20 @@ header {
     border-radius: 3rem 0 0 0;
 }
 
-#contact_container {
+#fixed_contacts {
     position: fixed;
+    top:0;
+    bottom: 0;
+    z-index: 5;
+}
+
+#contact_container {
+    position: absolute;
     transform: scale(0);
     width: 3.5rem;
     height: 3.5rem;
     left: 7vw;
-    bottom: 1rem;
+    bottom: 3rem;
     z-index: 3;
     transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -151,8 +176,7 @@ header {
 }
 
 #contact_bts > * {
-    position: fixed;
-    left:0;
+    position: absolute;
     z-index: 3;
     top: 2rem;
     height: 8vw;
@@ -160,7 +184,7 @@ header {
     width: 8vw;
     max-width: 3rem;
     transform: translate(0, 0);
-    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .iconBg, .iconBody {
@@ -176,22 +200,22 @@ header {
 }
 
 #contact_bts span {
-    transform: translate(7vw, 0);
+    left:7vw;
 }
 
 #contact_bts a:nth-child(2) {
-    transform: translate(19vw, 0);
+    left:19vw;
     transition-delay: 0.05s;
 }
 
 #contact_bts a:nth-child(3) {
-    transform: translate(72vw, 0);
     transition-delay: 0.1s;
+    left:72vw;
 }
 
 #contact_bts a:nth-child(4) {
-    transform: translate(84vw, 0);
     transition-delay: 0.15s;
+    left:84vw;
 }
 
 h1 {
@@ -234,7 +258,6 @@ header h2 {
     padding: 0 4rem;
     font-size: 1.4rem;
     text-align: center;
-    margin-bottom: 2rem;
     line-height: 1.8rem;
 }
 
@@ -249,62 +272,83 @@ header a {
 
 .body_h2 {
     font-size: 2rem;
-    color:#666666;
+    color:#999;
     font-weight: 300;
-    margin-bottom: 2rem;
+    margin: 3rem 0 2rem 0;
     text-align: center;
 }
 
 #whatIWork {
-    width: 75%;
+    width: 80%;
     max-width: 22rem;
-    margin: 0 auto 5rem auto;
+    margin: 0 auto 20rem auto;
+    text-align: center;
 }
 
 #whatIWork svg {
-    width: 25%;
-    margin-right: 1.6rem;
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.3rem;
 }
 
-#whatIWork div  {
-    margin-bottom: 2rem;
+#whatIWork span {
+    margin: 2.5rem auto;
+    width: 62%;
+    display: block;
+    border-bottom: 0.1rem solid #DDD;
 }
 
 #whatIWork div div {
     display: flex;
+    flex-direction: column;
     align-items: center;
     margin-bottom: 0.4rem;
 }
 
 #whatIWork h3 {
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     font-weight: 300;
     color: #666666;
-    width: 75%;
+    line-height: 2.2rem;
+    margin-bottom: 0.3rem;
 }
 
 #whatIWork h4 {
     font-size: 1.6rem;
     font-weight: 300;
     color: #999999;
-    width: 70%;
-    min-width: 18rem;
 }
 
 #pre_timeline, #pos_timeline {
+    position: absolute;
     width: 100%;
+    height: 7vw;
     display: block;
 }
 
+#pre_timeline svg, #pos_timeline svg {
+    width: 100%;
+}
+
+
+#pre_timeline {
+    top: 0;
+    transform: translateY(-70%);
+}
+
 #pos_timeline {
-    margin-bottom: 2rem;
+    bottom: 0;
+    transform: translateY(70%);
 }
 
 #timeline {
     background-color: #4e4cff;
     position: relative;
-    margin: -0.2rem 0;
-    padding: 3rem 0 5rem 0;
+    margin: 0 0 6rem 0;
+    padding: 3rem 0 3rem 0;
+    z-index: 2;
+    will-change: transform;
+    box-shadow: 0 0 6rem 0rem #06F;
 }
 
 #timeline h3 {
@@ -335,16 +379,26 @@ header a {
     color: white;
 }
 
-#timeline_events div h5 {
+#timeline_events h5 {
     font-weight: 200;
     font-size: 1.6rem;
     margin-bottom: 0.2rem;
 }
 
-#timeline_events div p {
+#timeline_events p {
     font-size: 1.1rem;
+    font-weight: 500;
+    color: #236;
+    letter-spacing: 0.05rem;
+    line-height: 1.3rem;
+}
+
+#timeline_events h6 {
+    color: white;
     font-weight: 300;
-    color: #DDD;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.05rem;
 }
 
 #timeline_events div h5::before {
@@ -357,6 +411,11 @@ header a {
     background: #4e4cff;
     border: 0.2rem solid white;
     border-radius: 50%;
+}
+
+#skills_container {
+    transform:translateY(calc(-82rem + 78vw));
+    max-height: 105rem;
 }
 
 #skills_container h3 {
@@ -476,7 +535,7 @@ input, textarea {
     background-color: #4e4cff;
     border: 0.3rem solid white;
     opacity: 0;
-    transition: opacity 0.4s ease-in, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.4s linear, transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #close_form {
@@ -496,6 +555,32 @@ input, textarea {
 }
 
 
+#about {
+    height: 30rem;
+    background-color: #eee;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 3rem 0 3rem;
+    box-sizing: border-box;
+    color: #888;
+}
+
+#about h6 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #666;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin: 1.2rem 0;
+    color: #888;
+}
+
+#about span {
+
+}
 
 
 
@@ -522,28 +607,64 @@ input, textarea {
 
 
 
+/* Tablet Landscape */
+
+@media (min-width:100vh) and (min-height:50vw) {
+
+}
+
+
+/* Tablet Portrait */
+
+@media (min-width:50vh) and (min-height:200vw) {
+
+}
 
 
 
-@media (min-width:900px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:600px) {
+
     #whatIWork {
-        display: flex;
-        justify-content: space-evenly;
-        max-width: 80rem;
-        width: 80%;
-        margin: 0 auto 10rem auto;
+        margin: 0 auto 14rem auto;
+        max-width: unset;
+        width: 53%;
     }
 
-    #whatIWork div {
-        width: 20rem;
-    }
+    /* #whatIWork > div {
+        display: flex;
+        align-items: center;
+    } */
 
     #photo_container {
-        margin: 0 auto 0 15vw;
+        margin: 0 auto 0 calc(35vw - 12rem);
         width: 10rem;
         max-height: unset;
         max-width: unset;
         height: 14rem;
+    }
+
+    header h2 {
+        margin-right: 19vw;
     }
 
     #photo_container > div {
@@ -553,7 +674,7 @@ input, textarea {
     h1, header h2, #see_my_work {
         text-align: left;
         padding: 0;
-        margin-left: 30rem;
+        margin-left: calc(35vw + 1rem);
     }
 
     #see_my_work {
@@ -563,6 +684,149 @@ input, textarea {
     }
 
     #h1_pusher {
-        height: 4rem;
+        height: 3rem;
+    }
+
+    #contact_bts > * {
+        top: 3.5vw;
+        height: 4vw;
+        width: 4vw;
+    }
+    
+
+    #contact_bts span {
+        left:74vw;
+    }
+
+    #contact_bts a:nth-child(2) {
+        left: 80vw;
+    }
+
+    #contact_bts a:nth-child(3) {
+        left: 86vw;
+    }
+
+    #contact_bts a:nth-child(4) {
+        left: 92vw;
+    }
+
+    #skills {
+        display: grid;
+        width: 70%;
+        margin: 0 auto;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:750px) {
+    
+    #whatIWork {
+        width: 90%;
+    }
+
+    #whatIWork div {
+        width: 12rem;
+        text-align: center;
+        display: block;
+    }
+
+    #whatIWork div div {
+        display: block;
+    }
+
+    #whatIWork article {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #whatIWork span {
+        width: 0;
+        height: 10rem;
+        border-right: 0.2rem solid #E9E9E9;
+        margin: 0 2rem;
+    }
+
+    #whatIWork h3 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
+    }
+
+    #whatIWork h4 {
+        font-size: 1.3rem;    
+    }
+
+    #contact_bts > * {
+        top: 2.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* REM adjusts */
+
+
+/* @media (min-width:1000px) {
+    html {
+        font-size: 17px;
+    }
+}
+@media (min-width: 1300px) {
+    html {
+        font-size: 19px;
+    }
+} */
+
+@media (min-width: 150vh) and (min-height:600px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:700px) and (max-height:1400px) {
+    #whatIWork {
+        margin:0 auto 7rem auto;
+    }
+}
+
+@media (min-width:750px) and (max-height: 450px) {
+    #whatIWork {
+        margin: 0 auto 11rem auto;
+    }
+}
+
+@media (max-width:750px) and (max-height: 450px) {
+    #whatIWork {
+        margin: 0 auto 45vw auto;
     }
 }

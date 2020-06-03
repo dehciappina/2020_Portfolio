@@ -14,9 +14,7 @@
 
         <div id="photo_container">
 
-            <img src="assets/profile.png" alt="André Ciappina Photo">
-            <div id="left_radius"></div>
-            <div id="right_radius"></div>
+            <img id="profile_photo" alt="André Ciappina Photo">
 
         </div>
 
@@ -38,160 +36,120 @@
         <img src="assets/right_measure.svg" alt="">
     </div>
 
-    <div id="contact_bts">
-        <span id="email_bt">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg enable-background="new 0 0 43.6 43.6" version="1.1" viewBox="0 0 43.6 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-            <circle class="iconBg" cx="21.8" cy="21.8" r="16"/>
-                <path class="iconBody" d="m20.7 18.4c-0.6 0.8-1 2.2-1.2 4-0.1 1.3 0 2.2 0.3 2.8s0.8 1 1.5 1c0.5 0 0.9-0.2 1.3-0.6s0.7-1 0.9-1.7l0.6-6.6c-0.3-0.1-0.6-0.1-0.9-0.1-1.1 0-1.9 0.4-2.5 1.2z"/>
-                <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8s9.8 21.8 21.8 21.8 21.8-9.8 21.8-21.8-9.7-21.8-21.8-21.8zm12.2 20.8c-0.1 2.5-0.7 4.5-1.9 6s-2.7 2.2-4.6 2.2c-0.8 0-1.5-0.2-2.1-0.5s-1.1-0.8-1.4-1.5c-0.9 1.3-2.2 1.9-3.8 1.9-0.9 0-1.7-0.3-2.4-0.8s-1.2-1.3-1.5-2.3-0.4-2.1-0.3-3.4c0.3-2.4 1.1-4.4 2.3-5.8 1.3-1.5 2.8-2.2 4.6-2.2 1.4 0 2.6 0.3 3.7 1l0.9 0.6-0.7 8.5c-0.2 1.3 0.3 2 1.4 2 0.8 0 1.5-0.5 2.1-1.6 0.6-1 0.9-2.4 0.9-4 0.2-3.2-0.5-5.7-2-7.5s-3.7-2.6-6.6-2.6c-1.8 0-3.5 0.5-4.9 1.4s-2.6 2.3-3.4 4-1.3 3.7-1.4 5.9c-0.2 3.4 0.5 6 2 7.8s3.8 2.7 6.8 2.7c0.8 0 1.7-0.1 2.6-0.3s1.6-0.4 2.2-0.7l0.5 2.4c-0.6 0.4-1.4 0.7-2.4 0.9s-2 0.4-3 0.4c-2.6 0-4.9-0.5-6.7-1.5s-3.2-2.5-4.1-4.5-1.3-4.4-1.2-7.2c0.1-2.7 0.7-5 1.8-7.2 1.1-2.1 2.6-3.7 4.6-4.9 1.9-1.2 4.1-1.7 6.6-1.7s4.5 0.5 6.3 1.5 3.1 2.5 4 4.4 1.3 4.1 1.1 6.6z"/>
-            </svg>
+    <div id="fixed_contacts">
+        <div id="contact_bts">
+            <span id="email_bt">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg enable-background="new 0 0 43.6 43.6" version="1.1" viewBox="0 0 43.6 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <circle class="iconBg" cx="21.8" cy="21.8" r="16"/>
+                    <path class="iconBody" d="m20.7 18.4c-0.6 0.8-1 2.2-1.2 4-0.1 1.3 0 2.2 0.3 2.8s0.8 1 1.5 1c0.5 0 0.9-0.2 1.3-0.6s0.7-1 0.9-1.7l0.6-6.6c-0.3-0.1-0.6-0.1-0.9-0.1-1.1 0-1.9 0.4-2.5 1.2z"/>
+                    <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8s9.8 21.8 21.8 21.8 21.8-9.8 21.8-21.8-9.7-21.8-21.8-21.8zm12.2 20.8c-0.1 2.5-0.7 4.5-1.9 6s-2.7 2.2-4.6 2.2c-0.8 0-1.5-0.2-2.1-0.5s-1.1-0.8-1.4-1.5c-0.9 1.3-2.2 1.9-3.8 1.9-0.9 0-1.7-0.3-2.4-0.8s-1.2-1.3-1.5-2.3-0.4-2.1-0.3-3.4c0.3-2.4 1.1-4.4 2.3-5.8 1.3-1.5 2.8-2.2 4.6-2.2 1.4 0 2.6 0.3 3.7 1l0.9 0.6-0.7 8.5c-0.2 1.3 0.3 2 1.4 2 0.8 0 1.5-0.5 2.1-1.6 0.6-1 0.9-2.4 0.9-4 0.2-3.2-0.5-5.7-2-7.5s-3.7-2.6-6.6-2.6c-1.8 0-3.5 0.5-4.9 1.4s-2.6 2.3-3.4 4-1.3 3.7-1.4 5.9c-0.2 3.4 0.5 6 2 7.8s3.8 2.7 6.8 2.7c0.8 0 1.7-0.1 2.6-0.3s1.6-0.4 2.2-0.7l0.5 2.4c-0.6 0.4-1.4 0.7-2.4 0.9s-2 0.4-3 0.4c-2.6 0-4.9-0.5-6.7-1.5s-3.2-2.5-4.1-4.5-1.3-4.4-1.2-7.2c0.1-2.7 0.7-5 1.8-7.2 1.1-2.1 2.6-3.7 4.6-4.9 1.9-1.2 4.1-1.7 6.6-1.7s4.5 0.5 6.3 1.5 3.1 2.5 4 4.4 1.3 4.1 1.1 6.6z"/>
+                </svg>
+                
+            </span>
             
-        </span>
-        
-        <a href="https://wa.me/5511951720100" target="_blank" title="call me on WhatsApp">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg enable-background="new 0 0 43.4 43.6" version="1.1" viewBox="0 0 43.4 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-            <circle class="iconBg" cx="21.4" cy="20.7" r="16"/>
-            <path class="iconBody" d="m0 43.6l3.1-11.2c-1.9-3.3-2.9-7-2.9-10.8 0-11.9 9.7-21.6 21.6-21.6 5.8 0 11.2 2.3 15.3 6.3 4.1 4.1 6.3 9.5 6.3 15.3 0 11.9-9.7 21.6-21.6 21.6-3.6 0-7.2-0.9-10.3-2.6l-11.5 3zm32.7-16.8c-0.1-0.2-0.5-0.3-1-0.7-0.6-0.3-3.2-1.6-3.7-1.7-0.5-0.2-0.9-0.3-1.2 0.3s-1.4 1.7-1.7 2.1c-0.3 0.3-0.7 0.4-1.2 0.1-0.6-0.3-2.3-0.8-4.4-2.7-1.6-1.4-2.7-3.2-3-3.8-0.3-0.5 0-0.8 0.2-1.1 0.2-0.2 0.6-0.7 0.8-1s0.3-0.6 0.6-0.9c0.2-0.3 0.1-0.7 0-1-0.2-0.2-1.2-2.9-1.7-4-0.4-1-0.9-0.9-1.2-0.9h-1c-0.3 0-1 0.1-1.4 0.7-0.5 0.6-1.9 1.9-1.9 4.5s2 5.2 2.2 5.6c0.3 0.3 3.8 5.8 9.3 8.2 1.3 0.6 2.3 0.9 3.1 1.1 1.3 0.4 2.5 0.3 3.4 0.2 1-0.1 3.2-1.3 3.7-2.6 0.3-1.1 0.3-2.2 0.1-2.4z"/>
-            </svg>            
-        </a>
-
-        <a href="https://www.linkedin.com/in/andreciappina/" target="_blank">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg enable-background="new 0 0 43.6 43.6" version="1.1" viewBox="0 0 43.6 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-            <circle class="iconBg" cx="21.7" cy="21.3" r="16"/>
-            <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8s9.8 21.8 21.8 21.8 21.8-9.8 21.8-21.8-9.7-21.8-21.8-21.8zm-5.6 31.9h-3.8v-14.1h3.8v14.1zm-1.9-15.7c-1.2 0-2.2-1-2.2-2.3s1-2.3 2.2-2.3 2.2 1 2.2 2.3-1 2.3-2.2 2.3zm17.3 15.7h-3.8v-7.2c0-4.3-5.1-4-5.1 0v7.2h-3.9v-14.1h3.8v2.3c1.8-3.3 8.9-3.5 8.9 3.2l0.1 8.6z"/>
+            <a href="https://wa.me/5511951720100" target="_blank" title="call me on WhatsApp">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg enable-background="new 0 0 43.4 43.6" version="1.1" viewBox="0 0 43.4 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <circle class="iconBg" cx="21.4" cy="20.7" r="16"/>
+                <path class="iconBody" d="m0 43.6l3.1-11.2c-1.9-3.3-2.9-7-2.9-10.8 0-11.9 9.7-21.6 21.6-21.6 5.8 0 11.2 2.3 15.3 6.3 4.1 4.1 6.3 9.5 6.3 15.3 0 11.9-9.7 21.6-21.6 21.6-3.6 0-7.2-0.9-10.3-2.6l-11.5 3zm32.7-16.8c-0.1-0.2-0.5-0.3-1-0.7-0.6-0.3-3.2-1.6-3.7-1.7-0.5-0.2-0.9-0.3-1.2 0.3s-1.4 1.7-1.7 2.1c-0.3 0.3-0.7 0.4-1.2 0.1-0.6-0.3-2.3-0.8-4.4-2.7-1.6-1.4-2.7-3.2-3-3.8-0.3-0.5 0-0.8 0.2-1.1 0.2-0.2 0.6-0.7 0.8-1s0.3-0.6 0.6-0.9c0.2-0.3 0.1-0.7 0-1-0.2-0.2-1.2-2.9-1.7-4-0.4-1-0.9-0.9-1.2-0.9h-1c-0.3 0-1 0.1-1.4 0.7-0.5 0.6-1.9 1.9-1.9 4.5s2 5.2 2.2 5.6c0.3 0.3 3.8 5.8 9.3 8.2 1.3 0.6 2.3 0.9 3.1 1.1 1.3 0.4 2.5 0.3 3.4 0.2 1-0.1 3.2-1.3 3.7-2.6 0.3-1.1 0.3-2.2 0.1-2.4z"/>
+                </svg>            
+            </a>
+    
+            <a href="https://www.linkedin.com/in/andreciappina/" target="_blank">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg enable-background="new 0 0 43.6 43.6" version="1.1" viewBox="0 0 43.6 43.6" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <circle class="iconBg" cx="21.7" cy="21.3" r="16"/>
+                <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8s9.8 21.8 21.8 21.8 21.8-9.8 21.8-21.8-9.7-21.8-21.8-21.8zm-5.6 31.9h-3.8v-14.1h3.8v14.1zm-1.9-15.7c-1.2 0-2.2-1-2.2-2.3s1-2.3 2.2-2.3 2.2 1 2.2 2.3-1 2.3-2.2 2.3zm17.3 15.7h-3.8v-7.2c0-4.3-5.1-4-5.1 0v7.2h-3.9v-14.1h3.8v2.3c1.8-3.3 8.9-3.5 8.9 3.2l0.1 8.6z"/>
+                </svg>
+            </a>
+    
+            <a href="assets/contact-bts/github.svg" target="_blank">
+                <?xml version="1.0" encoding="UTF-8"?>
+                <svg enable-background="new 0 0 43.6 43.7" version="1.1" viewBox="0 0 43.6 43.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                <circle class="iconBg" cx="21.8" cy="22" r="21.7"/>
+                <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8 0 9.6 6.2 17.8 14.9 20.7 1.1 0.2 1.5-0.5 1.5-1v-3.7c-6.1 1.3-7.4-2.9-7.4-2.9-1-2.5-2.4-3.2-2.4-3.2-2-1.4 0.1-1.3 0.1-1.3 2.2 0.2 3.4 2.3 3.4 2.3 2 3.3 5.1 2.4 6.3 1.8 0.2-1.4 0.7-2.4 1.4-2.9-4.8-0.5-9.9-2.4-9.9-10.8 0-2.4 0.8-4.3 2.3-5.8-0.2-0.6-1-2.8 0.2-5.8 0 0 1.8-0.6 6 2.2 1.7-0.5 3.6-0.7 5.5-0.7 1.8 0 3.7 0.3 5.5 0.7 4.1-2.8 6-2.2 6-2.2 1.2 3 0.4 5.2 0.2 5.8 1.4 1.5 2.2 3.4 2.2 5.8 0 8.4-5.1 10.2-9.9 10.8 0.8 0.7 1.5 2 1.5 4.1v6c0 0.6 0.4 1.3 1.5 1 8.7-3 14.9-11.1 14.9-20.7-0.2-12.2-9.9-22-22-22z"/>
+                </svg>
+            </a>
+        </div>
+    
+        <div id="contact_container">
+            <svg enable-background="new 0 0 43.3 43.3" version="1.1" viewBox="0 0 43.3 43.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    
+            <rect class="iconBg" x="5.5" y="16.5" width="32.2" height="10.3"/>
+            <path class="iconBody" d="m21.7 0c-12 0-21.7 9.7-21.7 21.7s9.7 21.7 21.7 21.7 21.7-9.7 21.7-21.7c-0.1-12-9.8-21.7-21.7-21.7zm-10.7 24.8c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7 0 3.2 1.4 3.2 3.2s-1.4 3.2-3.2 3.2zm10.7 0c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2s3.2 1.4 3.2 3.2c-0.1 1.8-1.5 3.2-3.2 3.2zm10.6 0c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7 0 3.2 1.4 3.2 3.2s-1.5 3.2-3.2 3.2z"/>
             </svg>
-        </a>
-
-        <a href="assets/contact-bts/github.svg" target="_blank">
-            <?xml version="1.0" encoding="UTF-8"?>
-            <svg enable-background="new 0 0 43.6 43.7" version="1.1" viewBox="0 0 43.6 43.7" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-            <circle class="iconBg" cx="21.8" cy="22" r="21.7"/>
-            <path class="iconBody" d="m21.8 0c-12 0-21.8 9.8-21.8 21.8 0 9.6 6.2 17.8 14.9 20.7 1.1 0.2 1.5-0.5 1.5-1v-3.7c-6.1 1.3-7.4-2.9-7.4-2.9-1-2.5-2.4-3.2-2.4-3.2-2-1.4 0.1-1.3 0.1-1.3 2.2 0.2 3.4 2.3 3.4 2.3 2 3.3 5.1 2.4 6.3 1.8 0.2-1.4 0.7-2.4 1.4-2.9-4.8-0.5-9.9-2.4-9.9-10.8 0-2.4 0.8-4.3 2.3-5.8-0.2-0.6-1-2.8 0.2-5.8 0 0 1.8-0.6 6 2.2 1.7-0.5 3.6-0.7 5.5-0.7 1.8 0 3.7 0.3 5.5 0.7 4.1-2.8 6-2.2 6-2.2 1.2 3 0.4 5.2 0.2 5.8 1.4 1.5 2.2 3.4 2.2 5.8 0 8.4-5.1 10.2-9.9 10.8 0.8 0.7 1.5 2 1.5 4.1v6c0 0.6 0.4 1.3 1.5 1 8.7-3 14.9-11.1 14.9-20.7-0.2-12.2-9.9-22-22-22z"/>
-            </svg>
-        </a>
+    
+        </div>
     </div>
-
-    <div id="contact_container">
-        <svg enable-background="new 0 0 43.3 43.3" version="1.1" viewBox="0 0 43.3 43.3" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
-
-        <rect class="iconBg" x="5.5" y="16.5" width="32.2" height="10.3"/>
-        <path class="iconBody" d="m21.7 0c-12 0-21.7 9.7-21.7 21.7s9.7 21.7 21.7 21.7 21.7-9.7 21.7-21.7c-0.1-12-9.8-21.7-21.7-21.7zm-10.7 24.8c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7 0 3.2 1.4 3.2 3.2s-1.4 3.2-3.2 3.2zm10.7 0c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2s3.2 1.4 3.2 3.2c-0.1 1.8-1.5 3.2-3.2 3.2zm10.6 0c-1.7 0-3.2-1.4-3.2-3.2 0-1.7 1.4-3.2 3.2-3.2 1.7 0 3.2 1.4 3.2 3.2s-1.5 3.2-3.2 3.2z"/>
-        </svg>
-
-    </div>
-
-    <h2 class="body_h2">I've Worked With...</h2>
 
     <article id="whatIWork">
-        <div>
-            <div>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93.1px"
-height="64.5px" viewBox="0 0 93.1 64.5" style="enable-background:new 0 0 93.1 64.5;" xml:space="preserve">
-<style type="text/css">
-.st3{fill:#CCCCCC;}
-.st1{fill:#4E4CFF;}
-</style>
-<defs>
-</defs>
-<g>
-<path class="st3" d="M46.6,8.1C25.8,8.1,8.1,22.8,1.3,29.3c-1.7,1.6-1.7,4.3,0,6c6.8,6.5,24.5,21.1,45.3,21.1
-   c20.8,0,38.5-14.7,45.3-21.1c1.7-1.6,1.7-4.3,0-6C85.1,22.8,67.4,8.1,46.6,8.1z M46.6,47.3c-8.3,0-15.1-6.8-15.1-15.1
-   s6.8-15.1,15.1-15.1s15.1,6.8,15.1,15.1C61.7,40.6,54.9,47.3,46.6,47.3z"/>
-<circle class="st1" cx="46.6" cy="32.3" r="3.6"/>
-<path class="st1" d="M76.1,61.3c-0.5,0-0.9,0.4-0.9,0.9l0,0.6l-0.6,0c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9l2.3,0l0-2.3
-   C77,61.7,76.6,61.3,76.1,61.3z"/>
-<path class="st1" d="M57.7,62.8l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9l2.9,0c0.5,0,0.9-0.4,0.9-0.9
-   C58.5,63.2,58.1,62.8,57.7,62.8z"/>
-<path class="st1" d="M67.6,62.8l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9l2.9,0c0.5,0,0.9-0.4,0.9-0.9
-   C68.5,63.2,68.1,62.8,67.6,62.8z"/>
-<path class="st1" d="M47.7,62.8l-0.6,0l0-0.6c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9l0,2.3l2.3,0c0.5,0,0.9-0.4,0.9-0.9
-   S48.2,62.8,47.7,62.8z"/>
-<path class="st1" d="M46.3,24.2c0.5,0,0.9-0.4,0.9-0.9l0-3.1c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9l0,3.1
-   C45.4,23.8,45.8,24.2,46.3,24.2z"/>
-<path class="st1" d="M46.3,40.3c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9l0-3.1
-   C47.1,40.7,46.8,40.3,46.3,40.3z"/>
-<path class="st1" d="M46.3,3.2c0.5,0,0.9-0.4,0.9-0.9l0-0.6l0.6,0c0.5,0,0.9-0.4,0.9-0.9c0-0.5-0.4-0.9-0.9-0.9l-2.3,0l0,2.3
-   C45.4,2.8,45.8,3.2,46.3,3.2z"/>
-<path class="st1" d="M54.8,1.7l2.9,0c0.5,0,0.9-0.4,0.9-0.9c0-0.5-0.4-0.9-0.9-0.9l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9
-   S54.3,1.7,54.8,1.7z"/>
-<path class="st1" d="M64.7,1.7l2.9,0c0.5,0,0.9-0.4,0.9-0.9S68.1,0,67.6,0l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9S64.2,1.7,64.7,1.7z"/>
-<path class="st1" d="M74.6,1.8l0.6,0l0,0.6c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9L77,0l-2.3,0c-0.5,0-0.9,0.4-0.9,0.9
-   S74.2,1.8,74.6,1.8z"/>
-<path class="st1" d="M76.1,50.8c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9l0-3.1
-   C77,51.2,76.6,50.8,76.1,50.8z"/>
-<path class="st1" d="M76.1,8.9c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9l0-3.1
-   C77,9.3,76.6,8.9,76.1,8.9z"/>
-</g>
-                </svg>
 
-                <h3>Photographic<br/>Retouching</h3>
-            </div>
+        <h2 class="body_h2">I've Worked With:</h2>
 
-            <h4>Manipulation on Adobe Photoshop</h4>
-        </div>
-        <div>
+        <article>
+
             <div>
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.6px"
-                    height="73.8px" viewBox="0 0 94.6 73.8" style="enable-background:new 0 0 94.6 73.8;" xml:space="preserve">
-                <style type="text/css">
-                    .st7{fill:#CCCCCC;}
-                    .st8{fill:none;stroke:#4E4CFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-                    .st9{fill:#4E4CFF;}
-                    .st10{fill:#6E6CF2;}
-                    .st11{fill:#8D8CE6;}
-                    .st12{fill:#ADACD9;}
-                </style>
-                <defs>
-                </defs>
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="94.6px"
+                height="73.8px" viewBox="0 0 94.6 73.8" style="enable-background:new 0 0 94.6 73.8;" xml:space="preserve">
+            <style type="text/css">
+                .st7{fill:#CCCCCC;}
+                .st8{fill:none;stroke:#4E4CFF;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+                .st9{fill:#4E4CFF;}
+                .st10{fill:#6E6CF2;}
+                .st11{fill:#8D8CE6;}
+                .st12{fill:#ADACD9;}
+            </style>
+            <defs>
+            </defs>
+            <g>
+                <path class="st7" d="M93.6,0H1C0.4,0,0,0.4,0,1v57.2c0,0.6,0.4,1,1,1h19.1v11.9c0,1.4,1.2,2.6,2.6,2.6h23c1.4,0,2.6-1.2,2.6-2.6
+                    V59.2h45.3c0.6,0,1-0.4,1-1V1C94.6,0.4,94.2,0,93.6,0z M46.3,68.6H22.1V28c0-0.3,0.3-0.6,0.6-0.6h9.6c0,0,0,0,0,0.1
+                    c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9c0,0,0,0,0-0.1h9.6c0.3,0,0.6,0.3,0.6,0.6V68.6z M92.6,53.1H48.3V28c0-1.4-1.2-2.6-2.6-2.6
+                    h-23c-1.4,0-2.6,1.2-2.6,2.6v25H2V9.4h90.6V53.1z"/>
+                <path class="st8" d="M72.1,36.1h-12c-1.2,0-2.1-1-2.1-2.1V21.4c0-1.2,1-2.1,2.1-2.1h17.7c1.2,0,2.1,1,2.1,2.1v6.7"/>
+                <circle class="st9" cx="88.9" cy="4.6" r="1.6"/>
+                <circle class="st9" cx="83.1" cy="4.6" r="1.6"/>
+                <circle class="st9" cx="77.3" cy="4.6" r="1.6"/>
                 <g>
-                    <path class="st7" d="M93.6,0H1C0.4,0,0,0.4,0,1v57.2c0,0.6,0.4,1,1,1h19.1v11.9c0,1.4,1.2,2.6,2.6,2.6h23c1.4,0,2.6-1.2,2.6-2.6
-                        V59.2h45.3c0.6,0,1-0.4,1-1V1C94.6,0.4,94.2,0,93.6,0z M46.3,68.6H22.1V28c0-0.3,0.3-0.6,0.6-0.6h9.6c0,0,0,0,0,0.1
-                        c0,1,0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9c0,0,0,0,0-0.1h9.6c0.3,0,0.6,0.3,0.6,0.6V68.6z M92.6,53.1H48.3V28c0-1.4-1.2-2.6-2.6-2.6
-                        h-23c-1.4,0-2.6,1.2-2.6,2.6v25H2V9.4h90.6V53.1z"/>
-                    <path class="st8" d="M72.1,36.1h-12c-1.2,0-2.1-1-2.1-2.1V21.4c0-1.2,1-2.1,2.1-2.1h17.7c1.2,0,2.1,1,2.1,2.1v6.7"/>
-                    <circle class="st9" cx="88.9" cy="4.6" r="1.6"/>
-                    <circle class="st9" cx="83.1" cy="4.6" r="1.6"/>
-                    <circle class="st9" cx="77.3" cy="4.6" r="1.6"/>
+                </g>
+                <g>
+                    <path class="st9" d="M80.3,37.2l1.6,3.2c0.2,0.4,0,0.8-0.3,1l0,0c-0.4,0.2-0.8,0-1-0.3L79,37.9c0,0,0,0-0.1,0l-2.1,1.2
+                        c-0.2,0.1-0.5,0-0.5-0.3l-0.1-8c0-0.3,0.4-0.5,0.6-0.3l5.6,5.1c0.2,0.2,0.1,0.5-0.1,0.6L80.3,37.2C80.3,37.2,80.3,37.2,80.3,37.2z
+                        "/>
+                </g>
+                <g>
                     <g>
+                        <path class="st9" d="M42.3,39.7H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,39.7,42.3,39.7z"
+                            />
                     </g>
                     <g>
-                        <path class="st9" d="M80.3,37.2l1.6,3.2c0.2,0.4,0,0.8-0.3,1l0,0c-0.4,0.2-0.8,0-1-0.3L79,37.9c0,0,0,0-0.1,0l-2.1,1.2
-                            c-0.2,0.1-0.5,0-0.5-0.3l-0.1-8c0-0.3,0.4-0.5,0.6-0.3l5.6,5.1c0.2,0.2,0.1,0.5-0.1,0.6L80.3,37.2C80.3,37.2,80.3,37.2,80.3,37.2z
-                            "/>
+                        <path class="st10" d="M42.3,44.5H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,44.5,42.3,44.5z"
+                            />
                     </g>
                     <g>
-                        <g>
-                            <path class="st9" d="M42.3,39.7H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,39.7,42.3,39.7z"
-                                />
-                        </g>
-                        <g>
-                            <path class="st10" d="M42.3,44.5H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,44.5,42.3,44.5z"
-                                />
-                        </g>
-                        <g>
-                            <path class="st11" d="M42.3,49.3H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,49.3,42.3,49.3z"
-                                />
-                        </g>
-                        <g>
-                            <path class="st12" d="M42.3,54.2H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,54.2,42.3,54.2z"
-                                />
-                        </g>
-                        <g>
-                            <path class="st7" d="M42.3,59H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,59,42.3,59z"/>
-                        </g>
+                        <path class="st11" d="M42.3,49.3H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,49.3,42.3,49.3z"
+                            />
+                    </g>
+                    <g>
+                        <path class="st12" d="M42.3,54.2H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,54.2,42.3,54.2z"
+                            />
+                    </g>
+                    <g>
+                        <path class="st7" d="M42.3,59H26.1c-0.4,0-0.8-0.3-0.8-0.8s0.3-0.8,0.8-0.8h16.2c0.4,0,0.8,0.3,0.8,0.8S42.7,59,42.3,59z"/>
                     </g>
                 </g>
-                </svg>
+            </g>
+            </svg>
 
+            <div>
                 <h3>Web Design</h3>
+                <h4>User Experience and Interface Design</h4>
+            </div>
             </div>
 
-            <h4>User Experience and Interface Design</h4>
-        </div>
-        <div>
+            <span></span>
+
             <div>
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93.2px"
                     height="72.7px" viewBox="0 0 93.2 72.7" style="enable-background:new 0 0 93.2 72.7;" xml:space="preserve">
@@ -225,17 +183,77 @@ height="64.5px" viewBox="0 0 93.1 64.5" style="enable-background:new 0 0 93.1 64
                 </g>
                 </svg>
 
-
-                <h3>Front End Web<br/>Development</h3>
+                <div>
+                    <h3>Front End Web Development</h3>
+                    <h4>html, css, SEO, responsive thinking</h4>
+                </div>
             </div>
 
-            <h4>html, css, SEO, responsive thinking</h4>
-        </div>
+            <span></span>
+
+            <div>
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="93.1px"
+    height="64.5px" viewBox="0 0 93.1 64.5" style="enable-background:new 0 0 93.1 64.5;" xml:space="preserve">
+    <style type="text/css">
+    .st3{fill:#CCCCCC;}
+    .st1{fill:#4E4CFF;}
+    </style>
+    <defs>
+    </defs>
+    <g>
+    <path class="st3" d="M46.6,8.1C25.8,8.1,8.1,22.8,1.3,29.3c-1.7,1.6-1.7,4.3,0,6c6.8,6.5,24.5,21.1,45.3,21.1
+    c20.8,0,38.5-14.7,45.3-21.1c1.7-1.6,1.7-4.3,0-6C85.1,22.8,67.4,8.1,46.6,8.1z M46.6,47.3c-8.3,0-15.1-6.8-15.1-15.1
+    s6.8-15.1,15.1-15.1s15.1,6.8,15.1,15.1C61.7,40.6,54.9,47.3,46.6,47.3z"/>
+    <circle class="st1" cx="46.6" cy="32.3" r="3.6"/>
+    <path class="st1" d="M76.1,61.3c-0.5,0-0.9,0.4-0.9,0.9l0,0.6l-0.6,0c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9l2.3,0l0-2.3
+    C77,61.7,76.6,61.3,76.1,61.3z"/>
+    <path class="st1" d="M57.7,62.8l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9c0,0.5,0.4,0.9,0.9,0.9l2.9,0c0.5,0,0.9-0.4,0.9-0.9
+    C58.5,63.2,58.1,62.8,57.7,62.8z"/>
+    <path class="st1" d="M67.6,62.8l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9s0.4,0.9,0.9,0.9l2.9,0c0.5,0,0.9-0.4,0.9-0.9
+    C68.5,63.2,68.1,62.8,67.6,62.8z"/>
+    <path class="st1" d="M47.7,62.8l-0.6,0l0-0.6c0-0.5-0.4-0.9-0.9-0.9s-0.9,0.4-0.9,0.9l0,2.3l2.3,0c0.5,0,0.9-0.4,0.9-0.9
+    S48.2,62.8,47.7,62.8z"/>
+    <path class="st1" d="M46.3,24.2c0.5,0,0.9-0.4,0.9-0.9l0-3.1c0-0.5-0.4-0.9-0.9-0.9c-0.5,0-0.9,0.4-0.9,0.9l0,3.1
+    C45.4,23.8,45.8,24.2,46.3,24.2z"/>
+    <path class="st1" d="M46.3,40.3c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9l0-3.1
+    C47.1,40.7,46.8,40.3,46.3,40.3z"/>
+    <path class="st1" d="M46.3,3.2c0.5,0,0.9-0.4,0.9-0.9l0-0.6l0.6,0c0.5,0,0.9-0.4,0.9-0.9c0-0.5-0.4-0.9-0.9-0.9l-2.3,0l0,2.3
+    C45.4,2.8,45.8,3.2,46.3,3.2z"/>
+    <path class="st1" d="M54.8,1.7l2.9,0c0.5,0,0.9-0.4,0.9-0.9c0-0.5-0.4-0.9-0.9-0.9l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9
+    S54.3,1.7,54.8,1.7z"/>
+    <path class="st1" d="M64.7,1.7l2.9,0c0.5,0,0.9-0.4,0.9-0.9S68.1,0,67.6,0l-2.9,0c-0.5,0-0.9,0.4-0.9,0.9S64.2,1.7,64.7,1.7z"/>
+    <path class="st1" d="M74.6,1.8l0.6,0l0,0.6c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9L77,0l-2.3,0c-0.5,0-0.9,0.4-0.9,0.9
+    S74.2,1.8,74.6,1.8z"/>
+    <path class="st1" d="M76.1,50.8c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9l0-3.1
+    C77,51.2,76.6,50.8,76.1,50.8z"/>
+    <path class="st1" d="M76.1,8.9c-0.5,0-0.9,0.4-0.9,0.9l0,3.1c0,0.5,0.4,0.9,0.9,0.9c0.5,0,0.9-0.4,0.9-0.9l0-3.1
+    C77,9.3,76.6,8.9,76.1,8.9z"/>
+    </g>
+                </svg>
+
+                <div>
+                    <h3>Photographic Retouching</h3>
+                    <h4>Manipulation on Adobe Photoshop</h4>
+                </div>
+            </div>
+
+        </article>
+
     </article>
 
-    <img src="assets/pre_timeline.png" id="pre_timeline">
-
     <section id="timeline">
+        
+        <svg id="pre_timeline" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="607.2px"
+            height="39.9px" viewBox="0 0 607.2 39.9" style="enable-background:new 0 0 607.2 39.9;" xml:space="preserve">
+        <style type="text/css">
+            .pretimeline{fill:#4e4cff;}
+        </style>
+        <defs>
+        </defs>
+        <path class="pretimeline" d="M0,0v39.9h607.2V0c0,0-146.5,20-303.6,20C146.5,20,0,0,0,0z"/>
+        </svg>
+
+
         <h3>My Timeline</h3>
 
         <img src="assets/timeline01.svg" id="timeline_line" alt="">
@@ -248,63 +266,79 @@ height="64.5px" viewBox="0 0 93.1 64.5" style="enable-background:new 0 0 93.1 64
 
             <div>
                 <h5>Advanced Photoshop Classes</h5>
-                <p>DRC Trainings | 2013</p>
+                <h6>DRC Trainings | 2013</h6>
             </div>
 
             <div>
                 <h5>My First Job</h5>
+                <h6>WE Studios | 2014</h6>
                 <p>At sixteen, one year before graduating High School, I got my first occupation on WE Studios as photographic retoucher and album diagrammer for weddings and debutant parties. I also did a bit of product photography for MyShoes.</p>
             </div>
 
             <div>
                 <h5>Working at a Model Agency</h5>
+                <h6>Allure Model Management</h6>
                 <p>After leaving WE Studios, I got arecommendation and went to Allure Model Management, a big model agency for commercial and fashion purposes. There I worked mainly as a photographic retoucher for high level models.</p>
             </div>
 
             <div>
                 <h5>End of High School</h5>
-                <p>2013</p>
+                <h6>ETEC Dra. Maria Augusta Saraiva | 2013</h6>
             </div>
 
             <div>
                 <h5>Back to The Model Agency</h5>
+                <h6>Allure Model Management | Agência Invite</h6>
                 <p>After taking a break from Allure, I returned to its sister company - Invite agency -, which provided photographic services under request. There was tons of photos to retouch, since hundreds of people hired the agency.</p>
             </div>
 
             <div>
                 <h5>Digital Cinema Classes</h5>
-                <p>Internacional Cinema Academy | 2015</p>
+                <h6>Internacional Cinema Academy | 2015</h6>
             </div>
 
             <div>
                 <h5>Philosophy Bachelor</h5>
-                <p>Federal University of ABC | 2015<br/>Interrupted in 2017</p>
+                <h6>Federal University of ABC | 2015</h6>
+                <p>Interrupted in 2017</p>
             </div>
 
             <div>
-                <h5>HTML5, CSS3 and Programming Logics Classes</h5>
-                <p>Impacta Trainings | 2017</p>
+                <h5>HTML5, CSS3 and Programming Logics</h5>
+                <h6>Impacta Trainings | 2017</h6>
             </div>
 
             <div>
                 <h5>Web Development Course</h5>
-                <p>Mastertech Academy | 2018<br/>The Hack Station is a Facebook project focused on boosting startups and discovering new talents on web development. In partnership with Mastertech, we had classes contemplating a lot of the webdev universe, with programming logics, HTML, CSS, JavaScript, React.js, Git classes and more. All this in a month.</p>
+                <h6>Mastertech Academy | 08.2018</h6>
+                <p>The Hack Station is a Facebook project focused on boosting startups and discovering new talents on web development. In partnership with Mastertech, we had classes contemplating a lot of the webdev universe, with programming logics, HTML, CSS, JavaScript, React.js, Git classes and more. All this in a month.</p>
             </div>
 
             <div>
                 <h5>Helping in WebDev Classes</h5>
+                <h6>Mastertech Academy | 09.2018</h6>
                 <p>The webdev course was a great opportunity to stand out. After that, I was invited to help the teachers on the next classes, solving doubts from students.</p>
             </div>
 
             <div>
                 <h5>Where I am</h5>
-                <p>SimpleAds Brasil | 2019<br/>SimpleAds is an adserver which offer different solutions for digital advertising. I work with creative support in the company, making formats of various sizes and interactive ads.</p>
+                <h6>SimpleAds Brasil | 2019</h6>
+                <p>SimpleAds is an adserver which offer different solutions for digital advertising. I work with creative support in the company, making formats of various sizes and interactive ads.</p>
             </div>
         </article>
 
-    </section>
+        <svg id="pos_timeline" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="607.2px"
+            height="39.9px" viewBox="0 0 607.2 39.9" style="enable-background:new 0 0 607.2 39.9;" xml:space="preserve">
+        <style type="text/css">
+            .postimeline{fill:#4e4cff;}
+        </style>
+        <defs>
+        </defs>
+        <path class="postimeline" d="M607.2,39.9V0H0v39.9c0,0,146.5-20,303.6-20C460.7,19.9,607.2,39.9,607.2,39.9z"/>
+        </svg>
 
-    <img src="assets/pos_timeline.png" id="pos_timeline">
+
+    </section>
 
     <section id="skills_container">
         <h3>Softwares and Skills</h3>
@@ -457,6 +491,18 @@ height="64.5px" viewBox="0 0 93.1 64.5" style="enable-background:new 0 0 93.1 64
         <span>By sending this e-mail, you'll be redirected to Formspree for validation and will be able to return with one click.</span>
 
         <img src="assets/pos_timeline.png" id="pos_form">
+    </div>
+
+    <div id="about">
+        <h6>About This Website</h6>
+        <p>This portfolio is one of the many I’ve designed for me in the past 4 years.</p>
+        
+        <p>It is a totally responsive SPA (Single Page Application) in HTML, CSS and JavaScript.</p>
+    
+        <p>Thank you for visiting me!</p>
+        
+        <p>André Ciappina</p>
+        </span>
     </div>
 
     <div id="loadImg"></div>
